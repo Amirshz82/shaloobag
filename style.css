@@ -1,0 +1,169 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #222;
+    background: #eef2f7;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #eef2f7, #dce6f1);
+}
+
+.panel {
+    width: 100%;
+    max-width: 390px;
+    padding: 36px 26px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid rgba(20, 35, 60, 0.05);
+    border-radius: 22px;
+    box-shadow: 0 14px 40px rgba(20, 35, 60, 0.12);
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 0 0 28px;
+    color: #707782;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    width: 100%;
+    min-height: 54px;
+    margin-top: 15px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: transform 180ms ease,
+                box-shadow 180ms ease,
+                opacity 180ms ease;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.14);
+}
+
+.social-button:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 4px;
+}
+
+.social-button:active {
+    transform: translateY(0);
+    opacity: 0.92;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.telegram {
+    background: linear-gradient(135deg, #37aee2, #168acd);
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #feda75 0%,
+        #fa7e1e 25%,
+        #d62976 55%,
+        #962fbf 78%,
+        #4f5bd5 100%
+    );
+}
+
+.icon {
+    width: 23px;
+    height: 23px;
+    flex: 0 0 23px;
+    fill: currentColor;
+}
+
+/* Designer credit */
+.designer-credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 100%;
+    margin: 8px auto 0;
+    padding: 8px 10px 16px;
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    direction: rtl;
+}
+
+.designer-logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.designer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.designer-text strong {
+    color: #333;
+    font-weight: 700;
+}
+
+.designer-phone {
+    color: #707782;
+    font-size: 15px;
+    unicode-bidi: isolate;
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    .panel {
+        padding: 30px 20px;
+    }
+
+    .designer-logo {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-button {
+        transition: none;
+    }
+}
